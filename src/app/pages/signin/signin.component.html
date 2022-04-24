@@ -1,0 +1,16 @@
+
+<div style="    width: 100vw;
+height: 100vh;
+overflow: hidden;">
+<div class="container" onclick="onclick">
+    <div class="top"></div>
+    <div class="bottom"></div>
+    <div class="center">
+      <h2>Please Sign In</h2>
+      <input type="email" placeholder="email" [(ngModel)]='user' />
+      <input type="password" placeholder="password" [(ngModel)]='pass' />
+      <button (click)="signIn()">Sign In</button>
+      <h2>&nbsp;</h2>
+    </div>
+  </div>
+</div>

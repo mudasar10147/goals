@@ -1,0 +1,35 @@
+.navButtons{
+    cursor: pointer;
+}
+.timer {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 1.4em;
+    letter-spacing: -1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .timer span {
+    margin: 10px 15px;
+    padding: 35px 25px;
+    font-size: 67px;
+    background: #f6f6f60a;
+    border-radius: 10px;
+    color: #ffffff;
+    box-shadow: 0px 0px 6px 0px #bfbfbf;
+  }
+.heading{
+    font-size: 12px;
+    font-family: monospace;
+    letter-spacing: 1px;
+}
+.timeBox{
+    display: grid;
+}
+@media only screen and (max-width: 600px) {
+    .timer span{
+        margin: 10px 6px;
+        padding: 20px 15px;
+        font-size: 30px;
+    }
+}

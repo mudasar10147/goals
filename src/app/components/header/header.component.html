@@ -1,0 +1,81 @@
+<section id="home" class="header_area">
+    <div id="header_navbar" class="header_navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="#">
+                            <p style="font-size: inherit; color: #fe9898">Meri Zunaira</p>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                            <ul id="nav" class="navbar-nav ml-auto">
+                                <li class="nav-item navButtons">
+                                    <a class="page-scroll" [ngClass]="{'active' : clickedButton == 'home'}" (click)="clicked('home')" [routerLink]="['/home']">Home</a>
+                                </li>
+                                <li class="nav-item navButtons">
+                                    <a class="page-scroll" [ngClass]="{'active' : clickedButton == 'aboutus'}" (click)="clicked('aboutus')" [routerLink]="['/aboutus']">About Us</a>
+                                </li>
+                                <li class="nav-item navButtons">
+                                    <a class="page-scroll" [ngClass]="{'active' : clickedButton == 'goals'}" (click)="clicked('goals')" [routerLink]="['/goal']">Goals</a>
+                                </li>
+                                <li class="nav-item navButtons">
+                                    <a class="page-scroll" [ngClass]="{'active' : clickedButton == 'gallery'}" (click)="clicked('gallery')" [routerLink]="['/gallery']">Gallery</a>
+                                </li>
+                                <li class="nav-item navButtons">
+                                    <a class="page-scroll" [ngClass]="{'active' : clickedButton == 'mistakes'}" (click)="clicked('mistakes')">Mistakes</a>
+                                </li>
+                                <li class="nav-item navButtons">
+                                    <a class="page-scroll" [ngClass]="{'active' : clickedButton == 'blog'}" (click)="clicked('blog')">Blog</a>
+                                </li>
+                                <li class="nav-item navButtons">
+                                    <a class="page-scroll" [ngClass]="{'active' : clickedButton == 'surprise'}" (click)="clicked('surprise')" [routerLink]="['/countdown']">Countdown</a>
+                                </li>
+                            </ul>
+                        </div> 
+                    </nav> 
+                </div>
+            </div> 
+        </div> 
+    </div>
+    <div class="header_hero">
+        <div class="single_hero bg_cover d-flex align-items-center" style="background-image: url(assets/images/collag.jpg)">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10">
+                        <div class="hero_content text-center">
+                            <h2 class="hero_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">1.5 Years Of<br /> Relationship</h2>
+                            <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">On the seconed birthday of Zunaira, this webpage is a surprise for her to show that she is the love of my life<br />I Love you zunaira and i will always be with you in every situation. We will Live a beautiful life togather</p>
+                            <div *ngIf="isSet" class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                                <div class="mainDiv">
+                                    <div class="timer">
+                                        <div class="timeBox">
+                                            <p class="heading">Days</p>
+                                            <span id="days"> {{dayZero}}{{daysToDday}} </span>
+                                        </div>
+                                        <div class="timeBox">
+                                            <p class="heading">Hours</p>
+                                            <span id="hours"> {{hourZero}}{{hoursToDday}} </span>
+                                        </div>
+                                        <div class="timeBox">
+                                            <p class="heading">Minutes</p>
+                                            <span id="minutes"> {{minZero}}{{minutesToDday}} </span>
+                                        </div>
+                                        <div class="timeBox">
+                                            <p class="heading">Seconds</p>
+                                            <span id="seconds"> {{secZero}}{{secondsToDday}} </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+</section>

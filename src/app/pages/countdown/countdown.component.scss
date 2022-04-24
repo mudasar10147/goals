@@ -1,0 +1,14 @@
+.button{
+    border: 1px solid black;
+    width: fit-content;
+    padding: 8px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 13px;
+    color: #333333;
+}
+.button:disabled{
+    color: rgb(220, 220, 220);
+    border-color: rgb(220, 220, 220);
+}
